@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estilo/style.css"></link>
+    <title>Document</title>
+</head>
+<body>
+<section class="códigos" id="codes">
+<h3>Esse o arquivo em js </h3>
+ <p>
+    var intervalo = 4000;
+</br>
+function slide1(){
+    document.getElementById('banner').src ="/img/pexels1.jpg";
+    setTimeout("slide2()",intervalo);
+}
+</br>
+function slide2(){
+    document.getElementById('banner').src ="/img/pexels2.jpg";
+    setTimeout("slide3()",intervalo);
+
+}
+</br>
+function slide3(){
+    document.getElementById('banner').src ="/img/pexels3.jpg";
+    setTimeout("slide4()",intervalo);
+}
+</br>
+function slide4(){
+    document.getElementById('banner').src ="/img/pexels4.jpg";
+    setTimeout("slide5()",intervalo);
+}
+</br>
+function slide5(){
+    document.getElementById('banner').src ="/img/pexels5.jpg";
+    setTimeout("slide6()",intervalo);
+}
+</br>
+function slide6(){
+    document.getElementById('banner').src ="/img/pexels6.jpg";
+    setTimeout("slide7()",intervalo);
+}
+</br>
+function slide7(){
+    document.getElementById('banner').src ="/img/pexels7.jpg";
+    setTimeout("slide1()",intervalo);
+}
+</br>
+</p>
+<h3>E aqui o arquivo em html</h3>
+<p>
+    < body onLoad="slide1()" >
+        < div  id='main'>
+            < img src="img/pexels1.jpg" id='banner'>
+            
+        < /div >
+    < /body >
+</p>
+</section>
+</body>
+</html>
